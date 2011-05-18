@@ -4,9 +4,9 @@ module ActionController
   class Base
 
     class << self
-
-      LEVELS = {:e => [:index, :show, :new, :edit, :create, :update, :destroy], :l => [:index, :show], :s => [] }
-      # Class methods here
+      # :w => write, :r => Read, :n => No Access
+      LEVELS = {:w => [:index, :show, :new, :edit, :create, :update, :destroy], :r => [:index, :show], :n => [] }
+      # Class methods
 
       def controller_name
         self.name.gsub(/Controller/, '').downcase
@@ -22,7 +22,7 @@ module ActionController
       end #def autom_permissions
 
     end #class << self
-  # Instance methods here
+  # Instance methods
   end
 end
 

@@ -7,8 +7,13 @@ Sometimes your controller roles are the same to many controllers
 Example
 =======
 
-Example goes here.
+insert 'autom_permissions' into your model to automatic write the acl9 roles:
 
 
-Copyright (c) 2011 [name of plugin creator], released under the MIT license
+access_control do
+  allow :controller_name_level, :to => actions_array
+end
+
+
+Copyright (c) 2011 [Gianpaulo SOares], released under the MIT license
 

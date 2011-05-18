@@ -1,7 +1,7 @@
 ExtendAcl9
 ==========
 
-Introduction goes here.
+Sometimes your controller roles are the same to many controllers
 
 
 Example
@@ -11,3 +11,4 @@ Example goes here.
 
 
 Copyright (c) 2011 [name of plugin creator], released under the MIT license
+
